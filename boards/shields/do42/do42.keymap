@@ -1,0 +1,75 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+&lt {
+    tapping-term-ms = <120>;
+};
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+                colemak {
+                        bindings = <
+   &kp ESC   &kp Q    &kp W &kp F  &kp P     &kp B       &kp J    &kp L &kp U     &kp Y   &kp SEMI &kp BSPC
+   &kp TAB   &kp A    &kp R &kp S  &kp T     &kp G       &kp M    &kp N &kp E     &kp I   &kp O    &kp SQT
+   &kp LSHFT &kp Z    &kp X &kp C  &kp D     &kp V       &kp K    &kp H &kp COMMA &kp DOT &kp FSLH &kp RET
+   &kp LCTRL &kp LGUI              &kp SPACE &mo 2       &mo 3    &lt 4 RET               &kp LALT &kp RGUI
+                                    // DPAD Left, Down, Middle, Up, Right
+                        &kp HOME  &kp C_AC_SCROLL_DOWN  &kp K_MUTE   &kp C_AC_SCROLL_UP &kp END
+                        >;
+                };
+                qwerty {
+                        bindings = <
+   &kp ESC   &kp Q    &kp W &kp E  &kp R     &kp T       &kp Y    &kp U &kp I     &kp O   &kp P    &kp BSPC
+   &kp TAB   &kp A    &kp S &kp D  &kp F     &kp G       &kp H    &kp J &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LSHFT &kp Z    &kp X &kp C  &kp V     &kp B       &kp N    &kp M &kp COMMA &kp DOT &kp FSLH &kp ESC
+   &kp LCTRL &kp LGUI              &kp SPACE &mo 2       &mo 3    &lt 4 RET               &kp LALT &kp RGUI
+                                    // DPAD Left, Down, Middle, Up, Right
+                        &kp HOME  &kp C_AC_SCROLL_DOWN  &kp K_MUTE   &kp C_AC_SCROLL_UP &kp END
+                        >;
+                };
+                lower_layer {
+                        bindings = <
+   &kp GRAVE &kp N1   &kp N2    &kp N3    &kp N4    &kp N5        &kp N6   &kp N7    &kp N8  &kp N9    &kp N0   &kp BSPC
+   &kp TAB   &none    &kp BSLH  &kp UNDER &kp MINUS &kp PIPE      &kp LEFT &kp DOWN  &kp UP  &kp RIGHT &none    &none
+   &kp LSHFT &none    &kp CARET &kp EQUAL &kp PLUS  &kp TILDE     &none    &none     &none   &none     &none    &none
+   &kp LCTRL &kp LGUI                     &kp SPACE &trans        &mo 5    &kp SPACE                   &kp LALT &kp RGUI
+                                    // DPAD Left, Down, Middle, Up, Right
+                        &kp C_PREV &kp C_VOL_DN  &kp C_PP &kp C_VOL_UP &kp C_NEXT
+                        >;
+                };
+                upper_layer {
+                        bindings = <
+   &kp GRAVE &kp EXCL &kp AT &kp HASH &kp DLLR  &kp PRCNT        &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp DEL
+   &kp TAB   &none    &none  &kp LBRC &kp RBRC  &kp GRAVE        &none     &kp LBKT  &kp RBKT  &none    &none    &none
+   &kp LSHFT &none    &none  &kp LPAR &kp RPAR  &none            &none     &kp LBRC  &kp RBRC  &none    &none    &none
+   &kp LCTRL &kp LGUI                 &kp SPACE &mo 5            &trans    &kp SPACE                    &kp LALT &kp RGUI
+                                    // DPAD Left, Down, Middle, Up, Right
+                                    &none &kp C_BRI_DN  &none &kp C_BRI_UP &none
+                        >;
+                };
+                func_layer {
+                        bindings = <
+   &kp ESC   &kp F1   &kp F2  &kp F3 &kp F4 &kp F5      &kp F6   &kp F7   &kp F6   &kp F9   &kp F10  &kp DEL
+   &kp TAB   &kp F11  &kp F12 &none  &none  &none       &mkp MB4 &mkp MB1 &mkp MB3 &mkp MB2 &mkp MB5 &none
+   &kp LSHFT &none    &none   &none  &none  &none       &none    &none    &none    &none    &none    &none
+   &kp LCTRL &kp LGUI                &none  &none       &none    &none                      &kp LALT &kp RGUI
+                                    // DPAD Left, Down, Middle, Up, Right
+                                      &none &none &none &none &none
+                        >;
+                };
+                config_layer {
+                        bindings = <
+   &none        &to 0       &to 1 &none &none &none           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none &none
+   &none        &none       &none &none &none &none           &none        &bt BT_PRV   &bt BT_NXT   &bt BT_DISC  &none &none
+   &none        &none       &none &none &none &none           &none        &none        &none        &none        &none &none
+   &ext_power EP_OFF &ext_power EP_ON   &none &none           &none        &none                  &bt BT_CLR   &bt BT_CLR_ALL
+                                    // DPAD Left, Down, Middle, Up, Right
+                                      &none &none &none &none &none
+                        >;
+                };
+        };
+};

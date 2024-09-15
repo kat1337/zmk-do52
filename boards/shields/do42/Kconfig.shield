@@ -1,0 +1,5 @@
+config SHIELD_DO42_LEFT
+    def_bool $(shields_list_contains,do42_left)
+
+config SHIELD_DO42_RIGHT
+    def_bool $(shields_list_contains,do42_right)
