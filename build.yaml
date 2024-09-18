@@ -8,6 +8,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: "do42_left"
+    shield: "do52_left"
   - board: nice_nano_v2
-    shield: "do42_right"
+    shield: "do52_right"

@@ -1,4 +1,4 @@
-#include "do42.dtsi"
+#include "do52.dtsi"
 
 &default_transform {
     col-offset = <6>;

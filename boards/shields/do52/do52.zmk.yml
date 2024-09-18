@@ -1,11 +1,11 @@
 file_format: "1"
-id: do42
-name: do42
+id: do52
+name: do52
 type: shield
-url: https://github.com/brokenax3/zmk-do42/
+url: https://github.com/kat1337/zmk-do52/
 requires: [pro_micro]
 features:
   - keys
 siblings:
-  - do42_left
-  - do42_right
+  - do52_left
+  - do52_right
