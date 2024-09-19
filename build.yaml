@@ -7,7 +7,7 @@
 #
 ---
 include:
-  - board: sparkfun_pro_micro_rp2040
+  - board: nice_nano_v2
     shield: "do52_left"
-  - board: sparkfun_pro_micro_rp2040
+  - board: nice_nano_v2
     shield: "do52_right"
