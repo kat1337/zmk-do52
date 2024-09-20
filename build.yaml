@@ -9,6 +9,7 @@
 include:
   - board: sparkfun_pro_micro_rp2040
     shield: "do52_left"
+    snippet: zmk-usb-logging
   - board: sparkfun_pro_micro_rp2040
     shield: "do52_right"
   - board: nice_nano_v2
