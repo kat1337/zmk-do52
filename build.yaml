@@ -17,3 +17,4 @@ include:
     snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: "do52pro_right"
+    snippet: zmk-usb-logging
