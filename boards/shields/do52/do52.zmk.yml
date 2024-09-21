@@ -1,0 +1,11 @@
+file_format: "1"
+id: do52
+name: do52
+type: shield
+url: https://github.com/kat1337/zmk-do52/
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - do52_left
+  - do52_right
