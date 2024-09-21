@@ -1,0 +1,5 @@
+config SHIELD_DO52PRO_LEFT
+    def_bool $(shields_list_contains,do52pro_left)
+
+config SHIELD_DO52PRO_RIGHT
+    def_bool $(shields_list_contains,do52pro_right)

@@ -1,0 +1,14 @@
+if SHIELD_DO52ORO_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "do52pro"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_DO52PRO_LEFT || SHIELD_DO42_RIGHT
+config ZMK_SPLIT
+    default y
+endif
