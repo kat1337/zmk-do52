@@ -8,7 +8,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_DO52_LEFT || SHIELD_DO42_RIGHT
+if SHIELD_DO52_LEFT || SHIELD_DO52_RIGHT
 config ZMK_SPLIT
     default y
 endif
