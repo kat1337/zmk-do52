@@ -1,7 +1,6 @@
 if SHIELD_DO42_LEFT
 config ZMK_KEYBOARD_NAME
     default "do42"
-
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 endif

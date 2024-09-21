@@ -26,7 +26,6 @@ RC(3,0) RC(3,1)                 RC(3,5) RC(4,5)  RC(4,6) RC(3,6)                
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
-
         diode-direction = "col2row";
         row-gpios
             = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
