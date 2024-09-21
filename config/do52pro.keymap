@@ -20,7 +20,7 @@
    &kp LSHFT &kp Z    &kp X &kp C  &kp V     &kp B       &kp N    &kp M &kp COMMA &kp DOT &kp FSLH &kp ESC
    &kp LCTRL &kp LGUI              &kp SPACE &mo 2       &mo 3    &lt 4 RET               &kp LALT &kp RGUI
                                     // DPAD Left, Down, Middle, Up, Right
-                        &kp HOME  &kp C_AC_SCROLL_DOWN  &kp K_MUTE   &kp C_AC_SCROLL_UP &kp END
+                        &kp LEFT  &kp DOWN  &kp K_MUTE   &kp UP &kp RIGHT
                         &kp LEFT  &kp DOWN  &kp K_MUTE   &kp UP &kp RIGHT
                         >;
                 };
