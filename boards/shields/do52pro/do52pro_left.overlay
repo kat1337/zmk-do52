@@ -1,4 +1,4 @@
-#include "do52.dtsi"
+#include "do52pro.dtsi"
 
 &kscan0 {
     col-gpios
