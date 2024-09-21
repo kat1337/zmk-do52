@@ -1,1 +1,1 @@
-ZMK support for the do52 keyboard based on brokenax3/zmk-do42
+ZMK support for the do52/do52pro keyboard based on brokenax3/zmk-do42
