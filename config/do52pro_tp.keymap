@@ -5,12 +5,9 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
-#define BASE 0
-#define LOWER 1
-#define UPPER 2
-#define MOUSE_KEYS 3
-#define MOUSE_TP 4
-#define MOUSE_TP_SET 5
+//#define MOUSE_KEYS 3
+//#define MOUSE_TP 4
+//#define MOUSE_TP_SET 5
 /*
  * Defines to enable/disable features
  *
@@ -19,8 +16,8 @@
  * For example, if we decide to build the firmware without the mouse features, we can
  * disable all the config options that rely on those forks and modules without having
  * to edit the entire keymap file manually every time.
- *#define HAS_MOUSE_KEYS
- *#define HAS_MOUSE_TP
+ *define HAS_MOUSE_KEYS
+ *define HAS_MOUSE_TP
  */
 
 
