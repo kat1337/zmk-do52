@@ -5,9 +5,12 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
+//#define BASE 0
+//#define LOWER 1
+//#define UPPER 2
 //#define MOUSE_KEYS 3
 //#define MOUSE_TP 4
-//#define MOUSE_TP_SET 5
+///#define MOUSE_TP_SET 5
 /*
  * Defines to enable/disable features
  *
@@ -79,7 +82,7 @@
    &kp LCTRL &kp LGUI              &kp SPACE &mo 2       &mo 3    &lt 4 RET               &kp LALT &kp RGUI
                                     // DPAD Left, Down, Middle, Up, Right
                         &kp LEFT  &kp DOWN  &kp C_MUTE   &kp UP &kp RIGHT
-                        &kp LEFT  &kp DOWN  &kp c_MUTE   &kp UP &kp RIGHT
+                        &kp LEFT  &kp DOWN  &kp C_MUTE   &kp UP &kp RIGHT
                         >;
                 };
                 lower_layer {
