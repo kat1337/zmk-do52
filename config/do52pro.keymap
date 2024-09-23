@@ -21,7 +21,7 @@
    &kp LCTRL &kp LGUI              &kp SPACE &mo 2       &mo 3    &lt 4 RET               &kp LALT &kp RGUI
                                     // DPAD Left, Down, Middle, Up, Right
                         &kp LEFT  &kp DOWN  &kp C_MUTE   &kp UP &kp RIGHT
-                        &kp LEFT  &kp DOWN  &kp c_MUTE   &kp UP &kp RIGHT
+                        &kp LEFT  &kp DOWN  &kp C_MUTE   &kp UP &kp RIGHT
                         >;
                 };
                 lower_layer {
