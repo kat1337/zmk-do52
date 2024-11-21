@@ -8,6 +8,6 @@ currently working:
 
 not working:
 
--trackpoint
+-trackpoint (see zmk-config-do52-pro for a trackpoint enabled version)
 
 -wired split
